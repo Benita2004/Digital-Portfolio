@@ -11,60 +11,33 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-
-  <script>
-  // Section fade animation
-  const sections = document.querySelectorAll('.section');
-  const revealSection = () => {
-    sections.forEach(sec => {
-      const rect = sec.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 120) sec.classList.add('visible');
-    });
-  };
-  window.addEventListener('scroll', revealSection);
-  revealSection();
-
-  // Hamburger menu toggle
-  const hamburger = document.getElementById('hamburger');
-  const sidebarNav = document.getElementById('sidebarNav');
-
-  hamburger.addEventListener('click', () => {
-    sidebarNav.classList.toggle('open');
-    hamburger.classList.toggle('active');
-  });
-</script>
-
-
-
-  
 <body>
-  <!-- Sidebar -->
-  <!-- Sidebar -->
-<nav class="sidebar">
-  <div class="sidebar-header">
-    <h2>Baridule <span>Aalo</span></h2>
-    <!-- Hamburger Icon (visible only on mobile) -->
-    <div class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>Baridule <span>Aalo</span></h2>
+      <!-- Hamburger Icon (visible only on mobile) -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
-  </div>
 
-  <ul class="sidebar-nav" id="sidebarNav">
-    <li><a href="#about" class="active">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <ul class="sidebar-nav" id="sidebarNav">
+      <li><a href="#about" class="active">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-  <div class="sidebar-footer">
-    <a href="https://www.linkedin.com/in/baridule-aalo-775b20265/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/Benita2004" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-  </div>
-</nav>
+    <div class="sidebar-footer">
+      <a href="https://www.linkedin.com/in/baridule-aalo-775b20265/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Benita2004" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </nav>
 
-
+  <!-- MAIN CONTENT -->
   <main class="main-content">
 
     <!-- ABOUT -->
@@ -154,10 +127,10 @@
         </div>
 
         <div class="project-card">
-          <img src="web-dev-site.jpg" alt="Web Development Portfolio">
+          <img src="web-dev-site.jpg" alt="Web Agency website">
           <div class="project-overlay">
             <h3>Web Development Portfolio</h3>
-            <p>A responsive portfolio website showcasing my work.</p>
+            <p>A responsive web agency website showcasing my work.</p>
             <div class="project-buttons">
               <a href="https://benita2004.github.io/creative-web-agency/" target="_blank" class="btn">View Site</a>
               <a href="https://github.com/Benita2004/creative-web-agency" target="_blank" class="btn secondary">View Code</a>
@@ -167,12 +140,10 @@
       </div>
     </section>
 
-    
     <!-- EXPERIENCE -->
     <section id="experience" class="section experience-timeline">
       <h1>Professional Experience</h1>
       <div class="timeline">
-
         <div class="timeline-step green">
           <div class="timeline-card">
             <h3>Retail Guide</h3>
@@ -204,11 +175,9 @@
             <p>Delivered one-on-one digital literacy training to community members. Helped improve understanding of Microsoft Office, email use, and online safety while providing basic technical support to increase digital access and confidence.</p>
           </div>
         </div>
-
       </div>
     </section>
 
-    
     <!-- CONTACT -->
     <section id="contact" class="section contact-modern">
       <h1>Contact</h1>
@@ -240,20 +209,28 @@
 
   </main>
 
+  <!-- JavaScript at the Bottom (Fixed DOM Timing Issue) -->
   <script>
-    const sections = document.querySelectorAll('.section');
-    const revealSection = () => {
-      sections.forEach(sec => {
-        const rect = sec.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 120) sec.classList.add('visible');
+    document.addEventListener('DOMContentLoaded', () => {
+      // Section fade animation
+      const sections = document.querySelectorAll('.section');
+      const revealSection = () => {
+        sections.forEach(sec => {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 120) sec.classList.add('visible');
+        });
+      };
+      window.addEventListener('scroll', revealSection);
+      revealSection();
+
+      // Hamburger menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const sidebarNav = document.getElementById('sidebarNav');
+      hamburger.addEventListener('click', () => {
+        sidebarNav.classList.toggle('open');
+        hamburger.classList.toggle('active');
       });
-    };
-    window.addEventListener('scroll', revealSection);
-    revealSection();
+    });
   </script>
 </body>
 </html>
-
-
-
-
