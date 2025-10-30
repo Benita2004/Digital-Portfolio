@@ -18,9 +18,7 @@
       <h2>Baridule <span>Aalo</span></h2>
     </div>
 
-    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
-
-    <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav">
       <li><a href="#about" class="active">Home</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -36,6 +34,7 @@
   </nav>
 
   <main class="main-content">
+
     <!-- ABOUT -->
     <section id="about" class="section about-simple">
       <div class="about-container">
@@ -47,7 +46,7 @@
           </p>
           <p>
             I’m now exploring cloud technologies as I prepare for my MS-900 certification. 
-            I’m curious by nature, quick to learn, and always up for a challenge.
+            I’m curious by nature, quick to learn, and always up for a challenge — whether that’s solving an IT issue, automating a task, or experimenting with new tech.
           </p>
           <a href="#projects" class="btn primary">View My Work</a>
         </div>
@@ -92,7 +91,7 @@
           <img src="password-generator.jpg" alt="Password Generator Project">
           <div class="project-overlay">
             <h3>Password Generator</h3>
-            <p>A Python program that generates secure, randomized passwords with adjustable length and complexity.</p>
+            <p>A Python program that generates secure, randomized passwords.</p>
             <div class="project-buttons">
               <a href="https://github.com/Benita2004/PRACTICE" target="_blank" class="btn secondary">View Code</a>
             </div>
@@ -103,7 +102,7 @@
           <img src="email-generator.jpg" alt="Student Email Generator Project">
           <div class="project-overlay">
             <h3>Student Email Generator</h3>
-            <p>A Python automation script that reads student data and generates unique email addresses using formatted rules.</p>
+            <p>Automation script that reads student data and generates unique email addresses.</p>
             <div class="project-buttons">
               <a href="https://github.com/Benita2004/PRACTICE" target="_blank" class="btn secondary">View Code</a>
             </div>
@@ -114,7 +113,7 @@
           <img src="aalo's-kitchen-preview.jpg" alt="Aalo's Kitchen Website">
           <div class="project-overlay">
             <h3>Aalo’s Kitchen</h3>
-            <p>A restaurant directory website built using HTML, CSS, and basic JavaScript.</p>
+            <p>Restaurant directory website built using HTML, CSS, and JavaScript.</p>
             <div class="project-buttons">
               <a href="https://benita2004.github.io/Aalo-s-Kitchen/" target="_blank" class="btn">View Site</a>
               <a href="https://github.com/Benita2004/Aalo-s-Kitchen" target="_blank" class="btn secondary">View Code</a>
@@ -126,7 +125,7 @@
           <img src="web-dev-site.jpg" alt="Web Development Portfolio">
           <div class="project-overlay">
             <h3>Web Development Portfolio</h3>
-            <p>A responsive portfolio website showcasing my love for good code.</p>
+            <p>A responsive portfolio website showcasing my work.</p>
             <div class="project-buttons">
               <a href="https://benita2004.github.io/creative-web-agency/" target="_blank" class="btn">View Site</a>
               <a href="https://github.com/Benita2004/creative-web-agency" target="_blank" class="btn secondary">View Code</a>
@@ -144,14 +143,14 @@
           <div class="timeline-card">
             <h3>Retail Guide</h3>
             <p class="meta">EE (BT Group) | Oct 2024 – Present</p>
-            <p>Provided technical advice to customers on device performance and connectivity. Managed account services and upgrades through CRM platforms.</p>
+            <p>Provided technical advice to customers on device performance and connectivity.</p>
           </div>
         </div>
         <div class="timeline-step red">
           <div class="timeline-card">
             <h3>IT Services Placement Intern</h3>
             <p class="meta">Leeds Beckett University | Sep 2024 – Sep 2025</p>
-            <p>Delivered first and second-line IT support, managed over 1,000 IT assets, and supported AD administration and server maintenance.</p>
+            <p>Delivered first and second-line IT support across a large enterprise environment.</p>
           </div>
         </div>
       </div>
@@ -163,25 +162,23 @@
       <div class="contact-container">
         <div class="contact-info">
           <h3>Let’s Connect</h3>
-          <p>If you'd like to collaborate, discuss a project, or just say hello, feel free to reach out!</p>
+          <p>If you'd like to collaborate or say hello, feel free to reach out!</p>
           <ul class="contact-list">
             <li><i class="fas fa-envelope"></i> <a href="mailto:benitaalo3@gmail.com">benitaalo3@gmail.com</a></li>
             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/baridule-aalo-775b20265/" target="_blank">linkedin.com/in/baridule-aalo</a></li>
             <li><i class="fas fa-map-marker-alt"></i> Leeds, United Kingdom</li>
           </ul>
-        </div>
-        <div class="contact-card-visual">
-          <div class="visual-box">
-            <i class="fas fa-paper-plane"></i>
-            <h4>Let’s Create Something Amazing</h4>
+          <div class="contact-buttons">
+            <a href="mailto:benitaalo3@gmail.com" class="btn primary">Email Me</a>
+            <a href="https://www.linkedin.com/in/baridule-aalo-775b20265/" target="_blank" class="btn secondary">LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <script>
-    // Fade-in animation for sections
     const sections = document.querySelectorAll('.section');
     const revealSection = () => {
       sections.forEach(sec => {
@@ -191,13 +188,6 @@
     };
     window.addEventListener('scroll', revealSection);
     revealSection();
-
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebarNav = document.getElementById('sidebar-nav');
-    menuToggle.addEventListener('click', () => {
-      sidebarNav.classList.toggle('open');
-    });
   </script>
 </body>
 </html>
