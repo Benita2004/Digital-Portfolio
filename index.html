@@ -18,7 +18,9 @@
       <h2>Baridule <span>Aalo</span></h2>
     </div>
 
-    <ul class="sidebar-nav">
+    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+
+    <ul class="sidebar-nav" id="sidebar-nav">
       <li><a href="#about" class="active">Home</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -34,29 +36,26 @@
   </nav>
 
   <main class="main-content">
-
     <!-- ABOUT -->
-   <section id="about" class="section about-simple">
-  <div class="about-container">
-    <div class="about-text">
-      <h1>About Me</h1>
-      <p>
-        Hey there! I’m <strong>Baridule Benita Aalo</strong>, a Computer Science student who loves using technology to make life simpler and smarter. 
-        During my placement at Leeds Beckett University, I gained hands-on experience with Microsoft 365, Active Directory, and enterprise networking, 
-        and discovered how much I enjoy bringing structure and clarity to complex systems.
-      </p>
-      <p>
-        I’m now exploring cloud technologies as I prepare for my MS-900 certification. 
-        I’m curious by nature, quick to learn, and always up for a challenge  whether that’s solving an IT issue, automating a task, or experimenting with new tech.
-      </p>
-      <a href="#projects" class="btn primary">View My Work</a>
-    </div>
-    <div class="about-image">
-      <img src="Profile.png" alt="Profile photo of Baridule Benita Aalo">
-    </div>
-  </div>
-</section>
-
+    <section id="about" class="section about-simple">
+      <div class="about-container">
+        <div class="about-text">
+          <h1>About Me</h1>
+          <p>
+            Hey there! I’m <strong>Baridule Benita Aalo</strong>, a Computer Science student who loves using technology to make life simpler and smarter. 
+            During my placement at Leeds Beckett University, I gained hands-on experience with Microsoft 365, Active Directory, and enterprise networking.
+          </p>
+          <p>
+            I’m now exploring cloud technologies as I prepare for my MS-900 certification. 
+            I’m curious by nature, quick to learn, and always up for a challenge.
+          </p>
+          <a href="#projects" class="btn primary">View My Work</a>
+        </div>
+        <div class="about-image">
+          <img src="Profile.png" alt="Profile photo of Baridule Benita Aalo">
+        </div>
+      </div>
+    </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section skills-section">
@@ -67,19 +66,16 @@
           <h3>Enterprise IT & Cloud</h3>
           <p>Microsoft 365, Active Directory, VPN, Imaging & Deployment, Ivanti Service Manager, ITIL exposure.</p>
         </div>
-
         <div class="skill-card orange">
           <i class="fas fa-code"></i>
           <h3>Programming & Automation</h3>
           <p>Python, Java, SQL, PowerShell (basic).</p>
         </div>
-
         <div class="skill-card purple">
           <i class="fas fa-server"></i>
           <h3>Infrastructure & Hardware</h3>
           <p>Server upgrades, GPU installation, iDRAC remote management.</p>
         </div>
-
         <div class="skill-card green">
           <i class="fas fa-lightbulb"></i>
           <h3>Core Strengths</h3>
@@ -92,32 +88,28 @@
     <section id="projects" class="section projects-section">
       <h1>Projects</h1>
       <div class="projects-grid">
-
-        <!-- Password Generator -->
         <div class="project-card">
           <img src="password-generator.jpg" alt="Password Generator Project">
           <div class="project-overlay">
             <h3>Password Generator</h3>
-            <p>A Python program that generates secure, randomized passwords with adjustable length and complexity. Designed for both personal and enterprise use.</p>
+            <p>A Python program that generates secure, randomized passwords with adjustable length and complexity.</p>
             <div class="project-buttons">
               <a href="https://github.com/Benita2004/PRACTICE" target="_blank" class="btn secondary">View Code</a>
             </div>
           </div>
         </div>
 
-        <!-- Email Generator -->
         <div class="project-card">
           <img src="email-generator.jpg" alt="Student Email Generator Project">
           <div class="project-overlay">
             <h3>Student Email Generator</h3>
-            <p>A Python automation script that reads student data and generates unique email addresses using formatted rules, validation, and logging.</p>
+            <p>A Python automation script that reads student data and generates unique email addresses using formatted rules.</p>
             <div class="project-buttons">
               <a href="https://github.com/Benita2004/PRACTICE" target="_blank" class="btn secondary">View Code</a>
             </div>
           </div>
         </div>
 
-        <!-- Food Website -->
         <div class="project-card">
           <img src="aalo's-kitchen-preview.jpg" alt="Aalo's Kitchen Website">
           <div class="project-overlay">
@@ -130,7 +122,6 @@
           </div>
         </div>
 
-        <!-- Web Development Portfolio -->
         <div class="project-card">
           <img src="web-dev-site.jpg" alt="Web Development Portfolio">
           <div class="project-overlay">
@@ -142,7 +133,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -150,39 +140,20 @@
     <section id="experience" class="section experience-timeline">
       <h1>Professional Experience</h1>
       <div class="timeline">
-
         <div class="timeline-step green">
           <div class="timeline-card">
             <h3>Retail Guide</h3>
             <p class="meta">EE (BT Group) | Oct 2024 – Present</p>
-            <p>Provided technical advice to customers on device performance and connectivity. Troubleshot broadband and mobile issues using digital systems to improve customer experience. Managed account services and upgrades through CRM platforms and collaborated with IT and sales teams to enhance efficiency and engagement.</p>
+            <p>Provided technical advice to customers on device performance and connectivity. Managed account services and upgrades through CRM platforms.</p>
           </div>
         </div>
-
         <div class="timeline-step red">
           <div class="timeline-card">
             <h3>IT Services Placement Intern</h3>
             <p class="meta">Leeds Beckett University | Sep 2024 – Sep 2025</p>
-            <p>Delivered first and second-line IT support across a large enterprise environment. Managed over 1,000 IT assets through Connect2 and resolved tickets in Ivanti Service Manager according to SLAs. Supported Active Directory administration, network troubleshooting, and server maintenance.</p>
+            <p>Delivered first and second-line IT support, managed over 1,000 IT assets, and supported AD administration and server maintenance.</p>
           </div>
         </div>
-
-        <div class="timeline-step purple">
-          <div class="timeline-card">
-            <h3>Sales Assistant</h3>
-            <p class="meta">Next PLC, Leeds | Jun 2022 – Aug 2024</p>
-            <p>Provided customer service in a fast-paced retail environment. Managed inventory, transactions, and store displays while maintaining operational efficiency and supporting daily logistics.</p>
-          </div>
-        </div>
-
-        <div class="timeline-step blue">
-          <div class="timeline-card">
-            <h3>Digital Inclusion Volunteer</h3>
-            <p class="meta">Better Leeds Community | Sep 2023 – Jun 2024</p>
-            <p>Delivered one-on-one digital literacy training to community members. Helped improve understanding of Microsoft Office, email use, and online safety while providing basic technical support to increase digital access and confidence.</p>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -192,20 +163,13 @@
       <div class="contact-container">
         <div class="contact-info">
           <h3>Let’s Connect</h3>
-          <p>If you'd like to collaborate, discuss a project, or just say hello, feel free to reach out. I’d love to hear from you!</p>
-
+          <p>If you'd like to collaborate, discuss a project, or just say hello, feel free to reach out!</p>
           <ul class="contact-list">
             <li><i class="fas fa-envelope"></i> <a href="mailto:benitaalo3@gmail.com">benitaalo3@gmail.com</a></li>
             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/baridule-aalo-775b20265/" target="_blank">linkedin.com/in/baridule-aalo</a></li>
             <li><i class="fas fa-map-marker-alt"></i> Leeds, United Kingdom</li>
           </ul>
-
-          <div class="contact-buttons">
-            <a href="mailto:benitaalo3@gmail.com" class="btn primary">Email Me</a>
-            <a href="https://www.linkedin.com/in/baridule-aalo-775b20265/" target="_blank" class="btn secondary">Connect on LinkedIn</a>
-          </div>
         </div>
-
         <div class="contact-card-visual">
           <div class="visual-box">
             <i class="fas fa-paper-plane"></i>
@@ -214,11 +178,10 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <script>
-    // Optional fade-in animation for sections
+    // Fade-in animation for sections
     const sections = document.querySelectorAll('.section');
     const revealSection = () => {
       sections.forEach(sec => {
@@ -228,6 +191,13 @@
     };
     window.addEventListener('scroll', revealSection);
     revealSection();
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebarNav = document.getElementById('sidebar-nav');
+    menuToggle.addEventListener('click', () => {
+      sidebarNav.classList.toggle('open');
+    });
   </script>
 </body>
 </html>
