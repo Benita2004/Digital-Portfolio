@@ -11,6 +11,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+
+  <script>
+  // Section fade animation
+  const sections = document.querySelectorAll('.section');
+  const revealSection = () => {
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 120) sec.classList.add('visible');
+    });
+  };
+  window.addEventListener('scroll', revealSection);
+  revealSection();
+
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const sidebarNav = document.getElementById('sidebarNav');
+
+  hamburger.addEventListener('click', () => {
+    sidebarNav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+</script>
+
+
+
+  
 <body>
   <!-- Sidebar -->
   <!-- Sidebar -->
@@ -227,6 +253,7 @@
   </script>
 </body>
 </html>
+
 
 
 
