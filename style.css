@@ -396,6 +396,44 @@ body {
 .timeline-step.purple .timeline-card { border-left-color: #8b5cf6; }
 .timeline-step.blue .timeline-card { border-left-color: #2563eb; }
 
+/* CERTIFICATES */
+.certificates-section {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 80px 60px;
+  max-width: 1100px;
+  margin: 0 auto 100px;
+  text-align: left;
+}
+
+.certificate-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.certificate-list li {
+  background: #f9fafb;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 5px solid #4f46e5;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #374151;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-list strong {
+  color: #1e3a8a;
+}
+
+
 /* ========== CONTACT ========== */
 .contact-modern {
   background: #fff;
@@ -568,3 +606,4 @@ body {
     font-size: 0.85rem;
   }
 }
+
